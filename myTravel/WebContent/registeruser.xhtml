@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="GB18030" ?>
-<%@ page language="java" contentType="text/html; charset=GB18030"
-    pageEncoding="GB18030"%>
+ 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://java.sun.com/jsf/html">
 <head>
@@ -10,6 +9,13 @@
 <body>
 <f:view>
 
-</f:view>
+user name:<h:inputText></h:inputText><h:form>
+			<br />Mail:<h:inputText></h:inputText><br />Password:<h:inputSecret></h:inputSecret><br />confirm Password:<h:inputSecret></h:inputSecret>
+		</h:form><h:form>
+
+			<h:commandButton value="OK" action="registeruser"></h:commandButton>
+			<br />
+			<h:commandButton value="return to default" action="default"></h:commandButton>
+		</h:form></f:view>
 </body>
 </html>
