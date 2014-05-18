@@ -30,7 +30,7 @@ public class UserBean implements Serializable {
 	     
 @Resource(name="jdbc/mytravel")
 	     private DataSource ds;
-	     private Logger logger=Logger.getLogger("myTravel");
+	     private Logger logger=Logger.getLogger(UserBean.class.getName());
 	      
 	      public String getName() {   
 	    	  if(name==null){
@@ -66,7 +66,7 @@ public class UserBean implements Serializable {
 	    	  if(conn==null) throw new SQLException("No connection");
 	    	  PreparedStatement ps=null;
 	    	  ResultSet rs=null;
-	    	  System.out.print("in the beginning for nameExists...");
+	    	  logger.log(Level.SEVERE,"in the beginning for nameExists...");
 	    	  String query="select username from user_t where username=?";
 	    	  try{
 	    		  ps=conn.prepareStatement(query);
@@ -111,17 +111,17 @@ public class UserBean implements Serializable {
 	      
 	      private boolean verifyPassword(){
 	    	  try {
-	    		  System.out.print("\nbegin to nameExists ... ");
+	    		  logger.log(Level.INFO,"begin to enter nameExists ... ");
 	    		  registerIn=nameExists(name);
 	    	  }catch(SQLException ex){
-	    		//  logger.log(Level.SEVERE,"no name in th list",ex);
+	    		  logger.log(Level.INFO,"no name in th list",ex);
 	    		 ex.printStackTrace();
 	    		  return false;
 	    	  }
 	    	  
 	    	  if(registerIn){
 	    		  try{
-	    			  System.out.print("befor doLogin");
+	    			  logger.log(Level.INFO,"befor doLogin");
 	    		  doLogin();
 	    		  }	    	  
 	    	  catch(SQLException ex){return false;}
@@ -136,11 +136,11 @@ public class UserBean implements Serializable {
 	    	  String outcome = null;
 	    	    if (verifyPassword()) {
 	    	   //     doneMessage = new FacesMessage("Successfully login");
-	    	    	 System.out.print("\nSuccessfully login");
+	    	    	 logger.log(Level.INFO,"Successfully login");
 	    	        outcome = "default";
 	    	    } else {
 	    	     //   doneMessage = new FacesMessage("Failed to login");
-	    	    	System.out.print("failed to login");
+	    	    	 logger.log(Level.INFO,"failed to login");
 	    	        outcome = "login";
 	    	    }
 	    //	  FacesContext.getCurrentInstance().addMessage(null, doneMessage);
