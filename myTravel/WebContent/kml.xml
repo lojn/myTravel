@@ -1,0 +1,106 @@
+
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>lojn.kml</name>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder>
+		<name>lojn</name>
+		<open>1</open>
+		<Placemark>
+			<name>home</name>
+			<LookAt>
+				<longitude>111.2862115202541</longitude>
+				<latitude>30.71063394792688</latitude>
+				<altitude>0</altitude>
+				<heading>-4.334514053464025</heading>
+				<tilt>0.02158738852316301</tilt>
+				<range>312.5987882705425</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>111.2867569083476,30.71070949790748,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>shimen</name>
+			<LookAt>
+				<longitude>111.7046909315436</longitude>
+				<latitude>30.77261601795724</latitude>
+				<altitude>0</altitude>
+				<heading>-4.131460151301329</heading>
+				<tilt>0.02137184409357601</tilt>
+				<range>340.2604852835059</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>111.7046909315436,30.77261601795723,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>office</name>
+			<LookAt>
+				<longitude>111.3228147768336</longitude>
+				<latitude>30.71977014679612</latitude>
+				<altitude>0</altitude>
+				<heading>-4.315762987841591</heading>
+				<tilt>0.02159428254475084</tilt>
+				<range>904.7865968935411</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>111.3221806343812,30.72000471333343,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>HUST</name>
+			<LookAt>
+				<longitude>114.4082010749799</longitude>
+				<latitude>30.51147376630298</latitude>
+				<altitude>0</altitude>
+				<heading>1.697210191747425</heading>
+				<tilt>0</tilt>
+				<range>282.9554457241966</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>114.4082010749799,30.51147376630297,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>
