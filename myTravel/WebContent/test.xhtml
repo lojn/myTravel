@@ -8,9 +8,20 @@
 <body>
 <f:view>
  <p>
-         <h:form>            
-            <h:commandButton value="return to test" action="default"></h:commandButton>  
-         </h:form>
+         <h:form>     
+         <table>
+         <tr>
+         <td>
+         Name
+         </td>
+         <td>
+         <h:message for="#{visitor.username}"></h:message>
+         
+         </td>
+         </tr>  
+         <tr>    
+            <h:commandButton value="return to test" action="#{visitor.sendMail}"></h:commandButton>  
+         </tr></table> </h:form>
          </p>
 </f:view>
 </body>

@@ -7,6 +7,10 @@
   <persistence-unit name="default" transaction-type="JTA">
     <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
     <jta-data-source>jdbc/mytravel</jta-data-source>
+    <class>myTravel.Counselor</class>
+    <class>myTravel.Person</class>
+    <class>myTravel.Subject</class>
+    <class>org.persistence.Hrpartment</class>
     <exclude-unlisted-classes>false</exclude-unlisted-classes>    
     <properties>
       <property name="eclipselink.ddl-generation" value="create-tables"/>

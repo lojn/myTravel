@@ -13,7 +13,11 @@
  Username: <h:inputText value="#{visitor.username}"  ></h:inputText>  
  PassWord: <h:inputSecret value="#{visitor.password}"></h:inputSecret>
   <h:commandButton value="login" action="#{visitor.loginAction}"></h:commandButton>  
- welcome #{user.name}
+ <p>
+ </p>welcome #{user.name}
+ <p>
+  <h:commandButton value="sendMail" action="#{visitor.sendMail}"></h:commandButton>
+ </p>
   </h:form>
    <p>
          <h:form>            
